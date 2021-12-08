@@ -1,0 +1,114 @@
+{
+  "nodes": {
+    "gitlab-lxd-image": {
+      "locked": {
+        "lastModified": 1636129324,
+        "narHash": "sha256-oQl8Byp0iJBQZmCxvv9bUJ2u1DvbQyW0BzuXvkVpyHM=",
+        "ref": "master",
+        "rev": "692308190b2d8ba5b8942f44453be00bd7e2c29e",
+        "revCount": 12,
+        "type": "git",
+        "url": "https://git.mkg20001.io/mkg20001/gitlab-lxd-image.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://git.mkg20001.io/mkg20001/gitlab-lxd-image.git"
+      }
+    },
+    "nix-node-package": {
+      "locked": {
+        "lastModified": 1631348881,
+        "narHash": "sha256-bG/wwzf14M1aCNVaL/KD1F+3uiY734d6G23g4eLWBI8=",
+        "owner": "mkg20001",
+        "repo": "nix-node-package",
+        "rev": "7e149259a3ff32b68dff3ddcb697a906b03e2bca",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mkg20001",
+        "ref": "master",
+        "repo": "nix-node-package",
+        "type": "github"
+      }
+    },
+    "nixos-hardware": {
+      "locked": {
+        "lastModified": 1638440530,
+        "narHash": "sha256-kmoNW+RmSka988iWvSrkiAxO8g6D76O0gW2cIIhL6U8=",
+        "owner": "nixos",
+        "repo": "nixos-hardware",
+        "rev": "4c9f07277bd4bc29a051ff2a0ca58c6403e3881a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nixos-hardware",
+        "type": "github"
+      }
+    },
+    "nixos-hardware_2": {
+      "locked": {
+        "lastModified": 1635449388,
+        "narHash": "sha256-i7hMiAgpRTGsMPTQKuNCDfW/ftQ+g9N6iaMj+RN6yws=",
+        "owner": "nixos",
+        "repo": "nixos-hardware",
+        "rev": "518b9c2159e7d4b7696ee18b8828f9086012923b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "master",
+        "repo": "nixos-hardware",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1638839397,
+        "narHash": "sha256-atJbLan8p91G8TKyE3II7vRhtHiuqc8kgTSCLppPwTk=",
+        "owner": "mkg20001",
+        "repo": "nixpkgs",
+        "rev": "64b152163899d854a22a8b5fef1b0f95309e7fce",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mkg20001",
+        "ref": "mkg-patch-a",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "gitlab-lxd-image": "gitlab-lxd-image",
+        "nixos-hardware": "nixos-hardware",
+        "nixpkgs": "nixpkgs",
+        "solaros": "solaros"
+      }
+    },
+    "solaros": {
+      "inputs": {
+        "nix-node-package": "nix-node-package",
+        "nixos-hardware": "nixos-hardware_2",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1636287199,
+        "narHash": "sha256-sl/xb3+CAfOxfaGRsi4/ySMw8htSlSfBJuoS72ky1ok=",
+        "owner": "xeredo-solar",
+        "repo": "solaros-nix",
+        "rev": "b70902acbb76f53d6e4db92377190d6893c7c431",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xeredo-solar",
+        "repo": "solaros-nix",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
