@@ -6,6 +6,7 @@ with lib;
 
   imports = [
     ./mkg/desktop.nix
+    ./yggdrasil.nix
   ];
 
   environment.systemPackages = with pkgs; [
@@ -22,6 +23,7 @@ with lib;
     # app util
     clipit
     pavucontrol
+    helvum
 
     inxi
     hwloc
@@ -58,7 +60,7 @@ with lib;
     keyMap = "de";
   };
 
-  i18n.defaultLocale = "de_DE.UTF-8";
+  i18n.defaultLocale = "en_US.UTF-8";
 
   # Set your time zone.
   time.timeZone = "Europe/Berlin";

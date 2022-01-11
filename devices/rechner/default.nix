@@ -32,6 +32,11 @@
       devices = [ "nodev" ];
       efiSupport = true;
       enable = true;
+
+      timeout = 20;
+      # default = "saved";
+      default = "1";
+
       # set $FS_UUID to the UUID of the EFI partition
       extraEntries = ''
         menuentry "Windows" {
@@ -41,6 +46,12 @@
           insmod chain
           search --fs-uuid --set=root $FS_UUID
           chainloader /EFI/Microsoft/Boot/bootmgfw.efi
+        }
+
+        menuentry "Kiosk todo" {
+          insmod search_fs_uuid
+          search --set=kiosk --fs-uuid bf148b15-da46-4db1-bac4-ce69ec7eeae6
+          configfile "($kiosk)/boot/grub/grub.cfg"
         }
       '';
       version = 2;
